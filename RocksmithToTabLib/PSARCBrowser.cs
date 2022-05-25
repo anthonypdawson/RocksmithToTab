@@ -191,6 +191,8 @@ namespace RocksmithToTabLib
                                 info.PackageAuthor = tokens[1]; break;
                             case "package version":
                                 info.PackageVersion = tokens[1]; break;
+                            case "package comment":
+                                info.PackageComment = tokens[1]; break;
                             default:
                                 Console.WriteLine("  Notice: Unknown key in toolkit.version: {0}", key);
                                 break;
@@ -232,5 +234,6 @@ namespace RocksmithToTabLib
         public string ToolkitVersion { get; set; }
         public string PackageAuthor { get; set; }
         public string PackageVersion { get; set; }
+        public string PackageComment { get; set; }
     }
 }
